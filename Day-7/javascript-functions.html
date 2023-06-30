@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script</title>
+</head>
+
+    <!-- ----INSTRUCTIONS---- -->
+    <!-- NO CSS Used -->
+    <!-- Inline,Enternal and extrnal javascript used  -->
+    <!-- coded by HarsH PanchaL -->
+
+<script src="./javascript-functions.js"></script>
+
+<script>
+    function demEnternalPrompt(){
+        prompt("hello harsh");
+
+    }
+    function demEnternalConfirm(){
+        confirm("hello harsh");
+
+    }
+    function demEnternalAlert(){
+        alert("hello harsh");
+
+    }
+</script>
+<body>
+    <!-- inline java script -->
+    <button onclick="alert('hello harsh')">Alert inline JS</button>
+    <button onclick="prompt('hello harsh')">propmt</button>
+    <button onclick="confirm('hello harsh')">confirm</button>
+
+    <!-- enternal java script -->
+    <button onclick="demEnternalPrompt()">propmt-enternal</button>
+    <button onclick="demEnternalConfirm()">confirm-enternal</button>
+    <button onclick="demEnternalAlert()">alert-enternal</button>
+
+    <!-- external java script  -->
+
+    <button onclick="demoExternalPrompt()">propmt-external</button>
+    <button onclick="demoExternalConfirm()">confirm-external</button>
+    <button onclick="demoExternalAlert()">alert-external</button>
+</body>
+</html>
