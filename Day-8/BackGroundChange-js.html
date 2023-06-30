@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Bg color manually</title>
+
+    <!-- ----INSTRUCTIONS---- -->
+    <!-- NO CSS Used -->
+    <!-- Enternaljavascript used  -->
+    <!-- coded by HarsH PanchaL -->
+</head>
+<body id="mybody">
+    <h1>Change Background Color</h1>
+    <select name="" id="Colors">
+        <option value="" disabled selected>select Color</option>
+        <option value="Black">Black</option>
+        <option value="Pink">Pink</option>
+        <option value="Green">Green</option>
+        <option value="Red">Red</option>
+        <option value="Gray">Gray</option>
+        <option value="Blue">Blue</option>
+    </select>
+
+    <script>
+        var Colors=document.getElementById("Colors");
+        var mybody=document.getElementById("mybody");
+        Colors.addEventListener("change",()=>{
+            mybody.style.backgroundColor=Colors.value;
+        })
+    </script>
+</body>
+</html>
