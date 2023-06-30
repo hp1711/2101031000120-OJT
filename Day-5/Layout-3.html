@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout-3</title>
+
+    <!-- ----INSTRUCTIONS---- -->
+    <!-- Internal CSS Used -->
+    <!-- coded by HarsH PanchaL -->
+</head>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .R1{
+        background-color: red;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        border: 2px solid black;
+    }
+
+    .middle{
+        width: 100%;
+        height: 630px;
+        display: flex;
+        justify-content: space-around;
+       
+    }
+
+    .R2{
+        width: 40%;
+        height: 600px;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        border: 2px solid black;
+    }
+
+    /* .R2{
+        width: 50%;
+        height: 600px;
+        float: left;
+        
+    } */
+
+    .R3{
+        width: 50%;
+        height: 600px;
+        /* float: left; */
+    }
+
+    .R3C1,.R3C2{
+        width: 70%;
+        height: 300px;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        border: 2px solid black; 
+        float: right;
+    
+    }
+
+    .R3C1{
+        margin-bottom: 10px;
+    }
+
+    .R5{
+        background-color: darkgreen;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        border: 2px solid black;
+    }
+    </style>
+<body>
+    <div class="R1">
+        Logo
+    </div>
+
+    <div class="middle">
+        <div class="R2">
+            sidebar
+        </div>
+
+        <div class="R3">
+            <div class="R3C1">
+                header
+            </div>
+
+            <div class="R3C2">
+                header 2
+            </div>
+        </div>
+    </div>
+<div class="R5">footer</div>
+    
+
+
+</body>
+</html>

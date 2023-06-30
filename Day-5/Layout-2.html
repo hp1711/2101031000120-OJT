@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout-2</title>
+
+    <!-- ----INSTRUCTIONS---- -->
+    <!-- Internal CSS Used -->
+    <!-- coded by HarsH PanchaL -->
+</head>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: rgb(248, 206, 152);
+    }
+    #R1{
+        background-color: red;
+        width: 100%;
+        height: 40px;
+        padding: 13px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        border: 2px solid black;  
+       }
+
+    #R2,#R5{
+        background-color: brown;
+        width: 100%;
+        height: 50px;
+        padding: 13px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+    }
+
+    #R3{
+        background-color: cadetblue;
+        width: 100%;
+        height:150px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+    }
+
+    #R4{
+        height: 350px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+        
+    #R4C1{
+        width: 33.33%;
+        margin-right: 2%;
+        background-color: coral;
+    }
+
+    #R4C2{
+        width: 33.33%;
+        background-color: darkgoldenrod;
+        margin-right: 2%;
+    }
+    
+    #R4C3{
+        width: 30%;
+        background-color: gold;
+    }
+
+    #R4 div{
+        float: left;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        margin: 0px 5px;
+    }
+</style>
+
+<body>
+    <div>
+        <div id="R1">
+            Logo
+        </div>
+
+        <div id="R2">
+            Navgation
+        </div>
+        
+        <div id="R3">
+            Header
+        </div>
+
+            <div id="R4">
+             <div id="R4C1">
+                left side bar    
+             </div>
+
+                <div id="R4C2">
+                Body area
+                </div>
+
+                <div id="R4C3">
+                    right side bar
+                </div>
+        </div>
+
+        <div id="R5">
+            Footer
+        </div>
+
+    </div>
+                
+            
+            
+            
+</body>
+</html>

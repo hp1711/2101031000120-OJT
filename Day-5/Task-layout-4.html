@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- ----INSTRUCTIONS---- -->
+    <!-- Internal CSS Used -->
+    <!-- coded by HarsH PanchaL -->
+</head>
+
+<style>
+
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .R1{
+        background-color: #fddbb4;
+        width: 100%;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 27px;
+        font-family: sans-serif;
+        font-weight: bold;
+        border-bottom: 1px solid black;
+
+    }
+
+    .R2,.R3{
+    background-color: #FAF0E4;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px; */
+}
+
+    .big-box-1{
+        display: flex;
+        justify-content: space-around;
+        
+        align-items: center;
+        width: 50%;
+    }
+
+    .big-box-2{
+        display: flex;
+        justify-content: space-around;
+        
+        align-items: center;
+        width: 50%;
+    }
+
+    .big-box-3{
+        display: flex;
+        justify-content: space-around;
+        
+        align-items: center;
+        width: 50%;
+    }
+
+    .big-box-4{
+        display: flex;
+        justify-content: space-around;
+        
+        align-items: center;
+        width: 50%;
+    }
+
+    
+    .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+        background-color: #f8eaca;
+        width: 320px;
+        height: 320px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 12px 1px rgba(0,0,0,0.75);
+        cursor: pointer;
+        
+    }
+
+    .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover{
+        background-color: #f8eaca;
+        width: 320px;
+        height: 320px;
+        border-radius: 15px;
+        box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
+    }
+    #content-1,#content-2,#content-3,#content-4{
+        height: 30px;
+        font-size: 24px;
+        font-family: sans-serif;
+        font-weight: bold;
+       }
+
+    #content-5,#content-6,#content-7,#content-8{
+        height: 30px;
+        font-size: 24px;
+        font-family: sans-serif;
+        font-weight: bold;
+    
+    }
+
+    .R6{
+        background-color: red;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        border: 2px solid black;
+    }
+
+    p{
+        border-bottom: 1px solid rgba(0,0,0,0.75);
+        text-align: center;
+        height: 100px;
+    }
+
+    li{
+        position: relative;
+        left: 25px;
+        font-size: 23px;
+        top: 10px;
+        width: 300px;
+        margin-bottom: 3px;
+    }
+
+    @media(max-width:1700px){
+        .R2,.R3{
+            height: 390px;
+        }
+
+        .big-box-1{
+            width: 50%;
+        }
+
+        .big-box-2{
+            width: 50%;
+        }
+
+        .big-box-3{
+            width: 50%;
+        }
+
+        .big-box-4{
+            width: 50%;
+        }
+
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+            width: 315px;
+            height: 315px;
+            
+        }
+
+    .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover{
+        background-color: #f8eaca;
+        width: 315px;
+        height: 315px;
+        border-radius: 15px;
+        box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
+    }
+
+        #content-1,#content-2,#content-3,#content-4{
+            height: 28px;
+            font-size: 22px;
+            font-family: sans-serif;
+            font-weight: bold;
+           }
+
+        #content-5,#content-6,#content-7,#content-8{
+            height: 28px;
+            font-size: 22px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        li{
+            position: relative;
+            left: 25px;
+            font-size: 23px;
+            top: 10px;
+            width: 290px;
+            margin-bottom: 3px;
+        }
+    }
+
+    @media(max-width:1400px){
+        .R2,.R3{
+            height: 380px;
+        }
+
+        .big-box-1{
+            width: 50%;
+        }
+
+        .big-box-2{
+            width: 50%;
+        }
+
+        .big-box-3{
+            width: 50%;
+        }
+
+        .big-box-4{
+            width: 50%;
+        }
+
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+            width: 300px;
+            height: 300px;
+            
+        }
+
+        .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover{
+        background-color: #f8eaca;
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+        box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
+    }
+
+        #content-1,#content-2,#content-3,#content-4{
+            height: 30px;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+           }
+
+        #content-5,#content-6,#content-7,#content-8{
+            height: 30px;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        li{
+            position: relative;
+            left: 25px;
+            font-size: 21px;
+            top: 10px;
+            width: 275px;
+            margin-bottom: 3px;
+        }
+    }
+
+    @media(max-width:1310px){
+        .R2,.R3{
+            height: 370px;
+        }
+
+        .big-box-1{
+            width: 50%;
+        }
+
+        .big-box-2{
+            width: 50%;
+        }
+
+        .big-box-3{
+            width: 50%;
+        }
+
+        .big-box-4{
+            width: 50%;
+        }
+
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+            width: 292px;
+            height: 292px;
+            
+        }
+
+    .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover{
+        background-color: #f8eaca;
+        width: 292px;
+        height: 292px;
+        border-radius: 15px;
+        box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
+        }
+
+        #content-1,#content-2,#content-3,#content-4{
+            height: 30px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: bold;
+           }
+
+        #content-5,#content-6,#content-7,#content-8{
+            height: 30px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        li{
+            position: relative;
+            left: 25px;
+            font-size: 21px;
+            top: 10px;
+            width: 270px;
+            margin-bottom: 3px;
+        }
+    }
+
+    @media(max-width:1250px){
+        .R2,.R3{
+            height: 360px;
+        }
+
+        .big-box-1{
+            width: 50%;
+        }
+
+        .big-box-2{
+            width: 50%;
+        }
+
+        .big-box-3{
+            width: 50%;
+        }
+
+        .big-box-4{
+            width: 50%;
+        }
+
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+            width: 280px;
+            height: 280px;
+            
+        }
+
+    .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover{
+        background-color: #f8eaca;
+        width: 280px;
+        height: 280px;
+        border-radius: 15px;
+        box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
+    }
+
+        #content-1,#content-2,#content-3,#content-4{
+            height: 30px;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: bold;
+           }
+
+        #content-5,#content-6,#content-7,#content-8{
+            height: 30px;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        li{
+            position: relative;
+            left: 25px;
+            font-size: 20px;
+            top: 10px;
+            width: 250px;
+            margin-bottom: 3px;
+        }
+    }
+
+    @media(max-width:1190px){
+        .R2,.R3{
+            height: 350px;
+        }
+
+        .big-box-1{
+            width: 50%;
+        }
+
+        .big-box-2{
+            width: 50%;
+        }
+
+        .big-box-3{
+            width: 50%;
+        }
+
+        .big-box-4{
+            width: 50%;
+        }
+
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+            width: 270px;
+            height: 270px;
+            
+        }
+
+    .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover{
+        background-color: #f8eaca;
+        width: 270px;
+        height: 270px;
+        border-radius: 15px;
+        box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
+    }
+        #content-1,#content-2,#content-3,#content-4{
+            height: 30px;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: bold;
+           }
+
+        #content-5,#content-6,#content-7,#content-8{
+            height: 30px;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        li{
+            position: relative;
+            left: 25px;
+            font-size: 19px;
+            top: 10px;
+            width: 240px;
+            margin-bottom: 3px;
+        }
+    }
+
+    @media(max-width:1120px){
+        .R2,.R3{
+            height: 340px;
+        }
+
+        .big-box-1{
+            width: 50%;
+        }
+
+        .big-box-2{
+            width: 50%;
+        }
+
+        .big-box-3{
+            width: 50%;
+        }
+
+        .big-box-4{
+            width: 50%;
+        }
+
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+            width: 260px;
+            height: 260px;
+            
+        }
+
+    .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover{
+        background-color: #f8eaca;
+        width: 260px;
+        height: 260px;
+        border-radius: 15px;
+        box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
+    }
+
+        #content-1,#content-2,#content-3,#content-4{
+            height: 30px;
+            font-size: 12px;
+            font-family: sans-serif;
+            font-weight: bold;
+           }
+
+        #content-5,#content-6,#content-7,#content-8{
+            height: 30px;
+            font-size: 12px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        li{
+            position: relative;
+            left: 25px;
+            font-size: 18px;
+            top: 10px;
+            width: 230px;
+            margin-bottom: 3px;
+        }
+    }
+
+    @media(max-width:1080px){
+        .R2,.R3{
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .big-box-1{
+            width: 80%;
+           
+           
+        }
+
+        .big-box-2{
+            width: 80%;
+        }
+
+        .big-box-3{
+            width: 80%;
+        }
+
+        .big-box-4{
+            width: 80%;
+        }
+
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+            width: 340px;
+            height: 340px;
+            
+        }
+
+        .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover{
+        background-color: #f8eaca;
+        width: 340px;
+        height: 340px;
+        border-radius: 15px;
+        box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
+    }
+
+        #content-1,#content-2,#content-3,#content-4{
+            height: 30px;
+            font-size: 22px;
+            font-family: sans-serif;
+            font-weight: bold;
+           }
+
+        #content-5,#content-6,#content-7,#content-8{
+            height: 30px;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        li{
+            position: relative;
+            left: 25px;
+            font-size: 25px;
+            top: 10px;
+            width: 315px;
+            margin-bottom: 3px;
+        }
+    }
+
+    @media(max-width:910px){
+        .R2,.R3{
+            height: 750px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .big-box-1{
+            width: 90%;
+           
+           
+        }
+
+        .big-box-2{
+            width: 90%;
+        }
+
+        .big-box-3{
+            width: 90%;
+        }
+
+        .big-box-4{
+            width: 90%;
+        }
+
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+            width: 320px;
+            height: 320px;
+            
+        }
+
+        .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover{
+        background-color: #f8eaca;
+        width: 320px;
+        height: 320px;
+        border-radius: 15px;
+        box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
+    }
+
+        #content-1,#content-2,#content-3,#content-4{
+            height: 30px;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+           }
+
+        #content-5,#content-6,#content-7,#content-8{
+            height: 30px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        li{
+            position: relative;
+            left: 25px;
+            font-size: 23px;
+            top: 10px;
+            width: 300px;
+            margin-bottom: 3px;
+        }
+    }
+
+    @media(max-width:750px){
+        .R2,.R3{
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .big-box-1{
+            width: 93%;
+           
+           
+        }
+
+        .big-box-2{
+            width: 93%;
+        }
+
+        .big-box-3{
+            width: 93%;
+        }
+
+        .big-box-4{
+            width: 93%;
+        }
+
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+            width: 300px;
+            height: 300px;
+            
+        }
+
+        .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover{
+        background-color: #f8eaca;
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+        box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
+    }
+
+        #content-1,#content-2,#content-3,#content-4{
+            height: 30px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: bold;
+           }
+
+        #content-5,#content-6,#content-7,#content-8{
+            height: 30px;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        li{
+            position: relative;
+            left: 25px;
+            font-size: 21px;
+            top: 10px;
+            width: 280px;
+            margin-bottom: 3px;
+        }
+    }
+
+    @media(max-width:680px){
+        .R2,.R3{
+            height: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .big-box-1{
+            width: 95%;
+           
+           
+        }
+
+        .big-box-2{
+            width: 95%;
+        }
+
+        .big-box-3{
+            width: 95%;
+        }
+
+        .big-box-4{
+            width: 95%;
+        }
+
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+            width: 280px;
+            height: 280px;
+            
+        }
+
+        .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover{
+        background-color: #f8eaca;
+        width: 280px;
+        height: 280px;
+        border-radius: 15px;
+        box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
+    }
+
+        #content-1,#content-2,#content-3,#content-4{
+            height: 30px;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: bold;
+           }
+
+        #content-5,#content-6,#content-7,#content-8{
+            height: 30px;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        li{
+            position: relative;
+            left: 25px;
+            font-size: 20px;
+            top: 10px;
+            width: 260px;
+            margin-bottom: 3px;
+        }
+    }
+
+    @media(max-width:610px){
+        .R2,.R3{
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .big-box-1{
+            width: 97%;
+           
+           
+        }
+
+        .big-box-2{
+            width: 97%;
+        }
+
+        .big-box-3{
+            width: 97%;
+        }
+
+        .big-box-4{
+            width: 97%;
+        }
+
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+            width: 260px;
+            height: 260px;
+            
+        }
+
+        .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover{
+        background-color: #f8eaca;
+        width: 260px;
+        height: 260px;
+        border-radius: 15px;
+        box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
+    }
+
+        #content-1,#content-2,#content-3,#content-4{
+            height: 30px;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: bold;
+           }
+
+        #content-5,#content-6,#content-7,#content-8{
+            height: 30px;
+            font-size: 12px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        li{
+            position: relative;
+            left: 25px;
+            font-size: 19px;
+            top: 10px;
+            width: 240px;
+            margin-bottom: 3px;
+        }
+    }
+
+    @media(max-width:570px){
+        .R2,.R3{
+            height: 1400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .big-box-1{
+            width: 98%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 950px;
+           
+           
+        }
+
+        .big-box-2{
+            width: 98%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 950px;
+        }
+
+        .big-box-3{
+            width: 98%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 950px;
+        }
+
+        .big-box-4{
+            width: 98%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 950px;
+        }
+
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+            width: 300px;
+            height: 270px;
+            
+        }
+
+        .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover{
+        background-color: #f8eaca;
+        width: 300px;
+        height: 270px;
+        border-radius: 15px;
+        box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
+    }
+
+        #content-1,#content-2,#content-3,#content-4{
+            height: 30px;
+            font-size: 12px;
+            font-family: sans-serif;
+            font-weight: bold;
+           }
+
+        #content-5,#content-6,#content-7,#content-8{
+            height: 30px;
+            font-size: 10px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        li{
+            position: relative;
+            left: 25px;
+            font-size: 20px;
+            top: 10px;
+            width: 270px;
+            margin-bottom: 3px;
+        }
+    }
+
+    @media(max-width:400px){
+        .R2,.R3{
+            height: 1400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .big-box-1{
+            width: 98%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 950px;
+           
+           
+        }
+
+        .big-box-2{
+            width: 98%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 950px;
+        }
+
+        .big-box-3{
+            width: 98%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 950px;
+        }
+
+        .big-box-4{
+            width: 98%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 950px;
+        }
+
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+            width: 310px;
+            height: 280px;
+            
+        }
+
+        .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover{
+        background-color: #f8eaca;
+        width: 310px;
+        height: 280px;
+        border-radius: 15px;
+        box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
+    }
+
+        #content-1,#content-2,#content-3,#content-4{
+            height: 30px;
+            font-size: 12px;
+            font-family: sans-serif;
+            font-weight: bold;
+           }
+
+        #content-5,#content-6,#content-7,#content-8{
+            height: 30px;
+            font-size: 10px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        li{
+            position: relative;
+            left: 25px;
+            font-size: 21px;
+            top: 10px;
+            width: 270px;
+            margin-bottom: 3px;
+        }
+    }
+
+</style>
+<body>
+    <div class="R1">
+        Basics of programming
+    </div>
+
+    <div class="R2">
+        <div class="big-box-1">
+            <div class="box1">
+                <p id="content-1">HTML</p>
+
+                <ol>
+                    <li>HTML stands for hypertext mark up language </li>
+                    <li>HTML is mark up language</li>
+                    <li>HTML is used to create web pages</li>
+                    <li>HTML is easy to learn</li>
+                    <li>HTML is used to create static web pages</li>
+                </ol>
+
+             </div>
+            <div class="box2">
+                <p id="content-2">CSS</p>
+
+                <ol>
+                    <li>CSS stands for cascading style sheet</li>
+                    <li>CSS is used to style web pages</li>
+                    <li>CSS is easy to learn</li>
+                    <li>CSS is used to style static web pages</li>
+                    <li>CSS is used to style dynamic web pages</li>
+                </ol>
+            </div>
+        </div>
+        
+        
+        <div class="big-box-2">
+            <div class="box3">
+                <p id="content-3">JavaScript</p>
+
+                <ol>
+                    <li>JavaScript is a scripting language</li>
+                    <li>JavaScript is used to make web pages interactive</li>
+                    <li>JavaScript is easy to learn</li>
+                    <li>JavaScript is used to make static web pages interactive</li>
+                    <li>JavaScript is used to make dynamic web pages interactive</li>
+                </ol>
+            </div>
+            <div class="box4">
+                <p id="content-4">Bootstrap</p>
+
+                <ol>
+                    <li>Bootstrap is a framework</li>
+                    <li>Bootstrap is used to make web pages responsive</li>
+                    <li>Bootstrap is easy to learn</li>
+                    <li>Bootstrap is used to make static web pages responsive</li>
+                    <li>Bootstrap is used to make dynamic web pages responsive</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="R3">
+       <div class="big-box-3">
+        <div class="box5" >
+            <p id="content-5">Python</p>
+
+            <ol>
+                <li>Python is a scripting language</li>
+                <li>Python is used to make web pages interactive</li>
+                <li>Python is easy to learn</li>
+                <li>Python is used to make static web pages interactive</li>
+                <li>Python is used to make dynamic web pages interactive</li>
+        </div>
+        <div class="box6" >
+            <p id="content-6">C++</p>
+
+            <ol>
+                <li>C++ is a programming language</li>
+                <li>C++ is used to make web pages interactive</li>
+                <li>C++ is easy to learn</li>
+                <li>C++ is used to make static web pages interactive</li>
+                <li>C++ is used to make dynamic web pages interactive</li>
+        </div>
+
+
+       </div>
+        <div class="big-box-4">
+            <div class="box7" >
+                <p id="content-7">C#</p>
+
+                <ol>
+                    <li>C# is a programming language</li>
+                    <li>C# is used to make web pages interactive</li>
+                    <li>C# is easy to learn</li>
+                    <li>C# is used to make static web pages interactive</li>
+                    <li>C# is used to make dynamic web pages interactive</li>
+            </div>
+            <div class="box8">
+                <p id="content-8">Java</p>
+
+                <ol>
+                    <li>Java is a programming language</li>
+                    <li>Java is used to make web pages interactive</li>
+                    <li>Java is easy to learn</li>
+                    <li>Java is used to make static web pages interactive</li>
+                    <li>Java is used to make dynamic web pages interactive</li>
+            </div>
+        </div>
+    </div>
+   
+   <div class="R6">Footer</div>
+
+</body>
+</html>
