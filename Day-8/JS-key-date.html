@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>press key date</title>
+</head>
+
+    <!-- ----INSTRUCTIONS---- -->
+    <!-- Inline CSS Used -->
+    <!-- Enternal javascript used  -->
+    <!-- coded by HarsH PanchaL -->
+<body>
+    <h1>
+        Press any key to display today's date:
+    
+    </h1>
+   
+    <input type="text" id="keyword" style="width: 500px;
+    height: 20px;">
+    <script>
+        var key=document.getElementById("keyword");
+        key.addEventListener("keypress",()=>{
+
+            var a= new Date();
+
+            alert(a)
+        });
+            
+    </script>
+</body>
+</html>

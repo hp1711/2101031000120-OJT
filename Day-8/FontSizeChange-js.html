@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Size change</title>
+
+    <!-- ----INSTRUCTIONS---- -->
+    <!-- Inline CSS Used -->
+    <!-- Enternaljavascript used  -->
+    <!-- coded by HarsH PanchaL -->
+</head>
+<body>
+    <p id="p1" style="color: gray;
+    font-weight: 800;">HarsH PanchaL</p>
+</body>
+<script>
+    var p1=document.getElementById("p1");
+
+    var i=15;
+
+    var a=setInterval(()=>{
+        p1.style.fontSize=i+"px";
+        i=i+5;
+        if(i==100)
+        {
+            clearInterval(a);
+        }
+    },1000);
+</script>
+</html>
