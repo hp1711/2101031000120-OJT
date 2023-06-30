@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackGround Video</title>
+
+    <!-- ----INSTRUCTIONS---- -->
+    <!-- Internal CSS Used -->
+    <!-- coded by HarsH PanchaL -->
+    <style> 
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .full-video{
+            position: fixed;
+            overflow: hidden;
+           background-size: cover;
+           z-index: -1;
+        }
+
+        .full-screen-video{
+            position: fixed;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        h1,h2,h3,h4,h5,h6{
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            
+        }
+
+</style>
+
+</head>
+
+<body>
+    <div class="full-video">
+        <video src="http://techslides.com/demos/sample-videos/small.mp4" autoplay loop muted class="full-screen-video"></video>
+    </div>
+
+    <h1>Hello</h1>
+    <h2>Hello</h2>
+    <h3>Hello</h3>
+    <h4>Hello</h4>
+    <h5>Hello</h5>
+    <h6>Hello</h6>
+</body>
+</html>

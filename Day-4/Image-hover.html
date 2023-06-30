@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Hover css</title>
+
+	<!-- ----INSTRUCTIONS---- -->
+    <!-- Internal CSS Used -->
+    <!-- coded by HarsH PanchaL -->
+</head>
+<body>
+	<style>
+		.container {
+		  position:relative;
+		  width: 400px;
+		}
+
+		.image {
+		  display: block;
+		  width: 400px;
+		  height: 400px;
+			transition: 2s;
+		  object-fit: cover;
+   
+		}
+
+		.overlay {
+		  position:absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  height: 100%;
+		  opacity:0;
+		  transition: 2s;
+		  background-color:rgba(0,0,0,0.7);
+		}
+
+		.container:hover .overlay {
+		  opacity:1;
+		}
+		.container:hover .image {
+		  transform:rotate(720deg);
+		}
+
+		.text {
+		  color: red;
+		  font-size: 20px;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  -webkit-transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  -o-transform: translate(-50%, -50%);
+		  -moz-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+		  
+		}
+	</style>
+
+<body>
+	<h2>Image Overlay Effect</h2>
+	<div class="container">
+		<img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_960_720.jpg" alt="Demo Image" class="image">
+		<div class="overlay">
+			<div class="text">HarsH PanchaL</div>
+		</div>
+	</div>
+</body>
+</html>

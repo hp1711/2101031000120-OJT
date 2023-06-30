@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover-list</title>
+
+     <!-- ----INSTRUCTIONS---- -->
+    <!-- Internal CSS Used -->
+    <!-- coded by HarsH PanchaL -->
+</head>
+
+<style>
+    		#Main li ul li{
+                display:none;
+            }
+			#Main li:hover ul li{
+                display:block;
+            }
+			#Main li:hover ul li ul li{
+                display:none;
+            }
+			#Main li ul li:hover ul li{
+                display:block;
+            }
+			#Main li ul li:hover ul li ul li{
+                display:none;
+            }
+			#Main li ul li ul li:hover ul li{
+                display:block;
+            }
+</style>
+<body>
+    <ul id="Main">
+        <li>Google
+            <ul>
+                <li>Gmail
+                    <ul>
+                        <li>Sign Up</li>
+                        <li>Sign In
+                            <ul>
+                                <li>Sign In As Admin</li>
+                                <li>Sign In As Member</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Youtube</li>
+                <li>GDrive</li>
+                <li>GMap</li>
+            </ul>
+        </li>
+        <li>Facebook</li>
+        <li>Microsoft
+            <ul>
+                <li>Bing</li>
+                <li>Linked In</li>
+            </ul>
+        </li>
+        <li>MSN</li>
+        <li>Amazon
+            <ul>
+                <li>AWS</li>
+                <li>Ecommerce</li>
+                <li>A-ML</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

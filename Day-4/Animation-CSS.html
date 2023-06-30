@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Animation CSS</title>
+</head>
+
+
+    <!-- ----INSTRUCTIONS---- -->
+    <!-- Internal CSS Used -->
+    <!-- coded by HarsH PanchaL -->
+
+        <style> 
+			div {
+			  width: 100px;
+			  height: 100px;
+              border-radius:50%;
+			  background-color: red;
+			  position:relative;
+			  animation-name:Demo;
+			  animation-duration:5s;
+			  animation-iteration-count:2;
+              border: 4px solid black;
+			 }
+	
+			@keyframes Demo{
+				0%{
+                    background-color:red;
+                     left:0px;
+                     top:0px;
+                    transform:rotate(0deg);
+                    border: 4px solid yellow;
+                }
+				25%{
+                    background-color:yellow;
+                     left:200px;
+                     top:0px;
+                    transform:rotate(90deg);
+                    border: 4px solid blue;
+                }
+				50%{
+                    background-color:blue;
+                     left:200px;
+                     top:200px;
+                    transform:rotate(180deg);
+                    border: 4px solid green;
+                }
+				75%{
+                    background-color:green;
+                     left:0px;
+                     top:200px;
+                    transform:rotate(270deg);
+                    border: 4px solid red;
+                }
+				100%{
+                    background-color:red;
+                     left:0px;
+                     top:0px;
+                    transform:rotate(360deg);
+                }
+			}
+		</style>
+	</head>
+
+	
+
+<body>
+        <div></div>
+
+</body>
+</html>
