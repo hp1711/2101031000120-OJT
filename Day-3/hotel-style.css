@@ -1,0 +1,239 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f9f6ea;
+  
+}
+
+nav{
+    width: 100%;
+    background-color: #41644A;
+    height: 60px;
+
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 0px 6px 8px rgba(0,0,0,0.3);
+    /* position: fixed; */
+}
+.effect
+{
+
+  background-image: linear-gradient(
+    -225deg,
+
+    rgb(176, 0, 0) 0%,
+    #fff 50%,
+    #b9b200 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 22px;
+      font-family: 'Times New Roman', Times, serif;
+}
+
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+.title{
+    color: #E7B10A;
+    width: 360px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 27px;
+    margin-left: 16px;
+    font-weight: bolder;
+   
+}
+.content>a{
+
+    font-size: 23px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #E7B10A;
+
+}
+.content{
+    width: 500px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.preview{
+    background-color: #d0c901;
+    padding: 10px;
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.preview>h3{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+   
+
+}
+
+
+section{
+    background-color: rgb(237, 237, 138);
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-bottom: 100px;
+ 
+}
+
+.section-1,.section-2,.section-3{
+    background-color: #d3cf5f;
+    width: 400px;
+    height: 350px;
+    border-radius: 13px;
+    border: 1px solid black;
+    
+    
+}
+.section-1:hover{
+    box-shadow: 0 0 10px 3px rgba(86, 80, 80, 0.526); 
+}
+
+.section-2:hover{
+    box-shadow: 0 0 10px 3px rgba(86, 80, 80, 0.526); 
+}
+
+.section-3:hover{
+    box-shadow: 0 0 10px 3px rgba(86, 80, 80, 0.526); 
+}
+
+p{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+}
+
+.pizza-font{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.pizza-font-end{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 25px;
+    position: relative;
+    top: 4px;
+   
+    
+}
+.pizza-list-section{
+    margin-bottom: 4px;
+}
+
+svg{
+    margin-left: 8px;
+    position: relative;
+    top: 3px;
+}
+
+.List{
+    margin-top: 10px;
+}
+
+.cart-button{
+    display: flex;
+    justify-content: center;
+}
+.button-cart{
+    padding: 9px;
+    width: 170px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top:45px;
+    cursor: pointer;
+}
+
+.button-cart:active{
+    background-color: rgb(0, 98, 0);
+}
+
+.image-slideshow {
+    width: 100%;
+    height: 700px;
+}
+  img {
+    width: 100%;
+    height: 700px;
+  }
+
+
+  .footer{
+    width: 100%;
+    height: 97px;
+    border-top: 1px solid black;
+    background-color: rgb(252, 251, 251);
+    margin-bottom: 50px;
+
+  }
+
+.details>h4{
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}  
+
+.details>h5{
+    font-size: 23px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
