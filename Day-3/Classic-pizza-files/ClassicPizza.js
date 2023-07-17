@@ -1,5 +1,5 @@
 function home_button(){
-    window.location.href="../hotel.html";
+    window.location.href="../hotel-menu.html";
 }
 
 
