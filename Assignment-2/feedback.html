@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="feedback.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+  <title>Feedback form</title>
+
+  <!-- Description  -->
+  <!-- Assignment-2 Feed back Form  -->
+
+</head>
+	<body>
+    <div class="main-box">
+      <div class="box">
+      <p class="signup">Feedback Form</p><hr>
+        <form >
+
+          <div class="section-1">
+                    <div class="div-1">
+                      <label for="name">Fullname:</label>
+                      <input type="text" name="firstname" id="TxtName"  placeholder="Enter the name" maxlength="40"/><br/>
+                    </div >
+              <div class="div-small-1">  <small id="TxtNameValidation"></small></div>
+          </div>
+         
+    <hr>
+		
+        <div class="section-2">
+                    <div class="div-2">
+                        <label for="email">Email:</label>
+                         <input type="text" name="email" id="TxtEmailId" placeholder="Enter the email id" maxlength="50"/><br/>
+        
+          </div class='div-small-2'>
+		          <small id="TxtEmailIdValidation"></small>
+        </div>
+		<hr/>
+        
+        <div class="section-3">
+                  <div class="div-3">
+                      
+          <label for="Mobile_number">Mobile:</label>
+          <input type="text" name="mobile_number"  id="TxtContactNo" placeholder="Enter mobile number" maxlength="10"/><br/>
+                  </div>
+
+          <div class="div-small-3">
+          <small id="TxtContactNoValidation"></small>
+     </div>
+    </div>
+    <hr>
+
+      <div class="section-4">
+  
+          <div class="div-4">
+            <label for="feedback" class="feedback">Feedback:</label>
+          <textarea rows="2" cols="10" name="feedback" id="TxtContactMsg"  maxlength="50"></textarea><br/>
+          </div>
+          <div class="div-small-4">
+            <small id="TxtContactMsgValidation"></small>
+        </div>
+
+        </div>
+		<hr/>
+
+          
+  <div class="star-source">
+      <svg>
+             <linearGradient x1="50%" y1="5.41294643%" x2="87.5527344%" y2="65.4921875%" id="grad">
+                <stop stop-color="#bf209f" offset="0%"></stop>
+                <stop stop-color="#d62a9d" offset="60%"></stop>
+                <stop stop-color="#ED009E" offset="100%"></stop>
+            </linearGradient>
+        <symbol id="star" viewBox="153 89 106 108">   
+          <polygon id="star-shape" stroke="url(#grad)" stroke-width="5" fill="currentColor" points="206 162.5 176.610737 185.45085 189.356511 150.407797 158.447174 129.54915 195.713758 130.842203 206 95 216.286242 130.842203 253.552826 129.54915 222.643489 150.407797 235.389263 185.45085"></polygon>
+        </symbol>
+    </svg>
+    
+    </div>
+    
+    <div class="section-5">
+      <label>Star Rating:</label>
+    <div class="star-container">
+      <input type="radio" name="star" id="five">
+      <label for="five">
+        <svg class="star">
+          <use xlink:href="#star"/>
+        </svg>
+      </label>
+      <input type="radio" name="star" id="four">
+      <label for="four">
+        <svg class="star">
+          <use xlink:href="#star"/>
+        </svg>
+      </label>
+      <input type="radio" name="star" id="three">
+      <label for="three">
+        <svg class="star">
+          <use xlink:href="#star"/>
+        </svg>
+      </label>
+      <input type="radio" name="star" id="two">
+      <label for="two">
+        <svg class="star">
+          <use xlink:href="#star" />
+        </svg>
+      </label>
+      <input type="radio" name="star" id="one">
+      <label for="one">
+       <svg class="star">
+        <use xlink:href="#star" />
+       </svg>
+      </label>
+    
+    </div>
+    </div>
+    
+    <hr>   
+     <div class="button">
+      <input type="submit"  id="BtnSubmit" value="Submit" name="submit" class="button-style"  >
+     </div>
+      </form>
+    </div>
+
+    <script src="feedback.js"></script>
+      
+
+</div>
+  </body>
+</html>
