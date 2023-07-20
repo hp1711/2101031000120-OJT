@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+small
+{
+    color:blue;
+}
+
+
+.main-box{
+
+width: 100%;
+height: 900px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #e4e7e7;
+
+}
+.box{
+width: 380px;
+height: 500px;
+border: 3px solid black;
+border-radius: 10px;
+
+
+
+}
+.signup{
+font-size: 25px;
+font-weight: bold;
+padding: 10px 0px;
+font-family: 'Inter', sans-serif;
+
+
+}
+
+
+body {
+
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+h1 {
+font-family: 'Fjalla One', sans-serif;
+margin-bottom: 0.15rem;
+}
+
+h2 {
+font-family: 'Cutive Mono', 'Courier New';
+font-size: 1rem;
+letter-spacing: 1px;
+margin-bottom: 4rem;
+}
+
+.section-1{
+    width: 380px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-1{
+    width: 380px;
+    height: 25px;
+}
+
+.div-small-1{
+    width: 380px;
+    height: 10px;
+    font-size: 18px;
+}
+.section-1>div>label{
+    font-size: 20px;
+}
+
+.section-1>div>input{
+    width: 200px;
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.section-2{
+    width: 380px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-2{
+    width: 380px;
+    height: 25px;
+}
+
+.div-small-2{
+    width: 380px;
+    height: 10px;
+    font-size: 18px;
+}
+.section-2>div>label{
+    font-size: 20px;
+}
+
+.section-2>div>input{
+    width: 200px;
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+.section-3{
+    width: 380px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-3{
+    width: 380px;
+    height: 25px;
+}
+
+.div-small-3{
+    width: 380px;
+    height: 10px;
+    font-size: 18px;
+}
+.section-3>div>label{
+    font-size: 20px;
+}
+
+.section-3>div>input{
+    width: 200px;
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 18px;
+    margin-left: 25px;
+}
+
+.section-4{
+    width: 380px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-4{
+    width: 380px;
+    height: 100px;
+}
+
+.div-small-4{
+    width: 380px;
+    height: 10px;
+    font-size: 18px;
+}
+.section-4>div>label{
+    font-size: 20px;
+}
+
+.section-4>div>textarea{
+    min-height: 50px;
+    min-width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: none;
+    margin-left: 20px;
+}
+
+.section-5{
+    width: 380px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.button-style{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: rgb(75, 75, 255);
+    color: white;
+}
+
+
+
+
+svg {
+width: 3rem;
+height: 3rem;
+padding: 0.15rem;
+}
+
+
+/* hide radio buttons */
+
+input[name="star"] {
+display: inline-block;
+width: 0;
+opacity: 0;
+margin-left: -2px;
+}
+
+/* hide source svg */
+
+.star-source {
+width: 0;
+height: 0;
+visibility: hidden;
+}
+
+
+
+
+.star {
+color: transparent;
+transition: color 0.2s ease-in-out;
+}
+
+
+
+
+.star-container {
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+}
+
+label:hover ~ label .star,
+svg.star:hover,
+input[name="star"]:focus ~ label .star,
+input[name="star"]:checked ~ label .star {
+color: #d62a9d;
+}
+
+input[name="star"]:checked + label .star {
+animation: starred 0.5s;
+}
+
+input[name="star"]:checked + label {
+animation: scaleup 1s;
+}
+
+/* textarea {
+min-height: 60px;
+min-width: 60px;
+padding: 10px;
+font-size: 16px;
+line-height: 1.5;
+resize: none;
+} */
+
+.feedback{
+position: relative;
+bottom: 25px;
+}
+
+
+@keyframes scaleup {
+from {
+transform: scale(1.2);
+}
+to {
+transform: scale(1);
+}
+}
+
+@keyframes starred {
+from {
+color: #600040;
+}
+to {
+color: #d62a9d;
+}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+small {
+    color: blue;
+}
+
+.main-box {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e7e7;
+}
+
+/* Base styles for the .box */
+.box {
+    width: 380px;
+    height: 500px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Responsive styles using media queries */
+@media screen and (max-width: 768px) {
+    /* Styles for tablets and smaller devices */
+    .main-box {
+        height: auto;
+    }
+    .box {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for mobile phones and smaller devices */
+    .box {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .signup {
+        font-size: 20px;
+    }
+    /* Adjust other styles as needed */
+    .section-1>div>input,
+    .section-2>div>input,
+    .section-3>div>input {
+        width: 100%;
+        max-width: 300px; /* Or any other suitable value for mobile layout */
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .section-4>div>textarea {
+        width: 100%;
+        max-width: 300px; /* Or any other suitable value for mobile layout */
+        margin-left: 0;
+    }
+    .button-style {
+        width: 100%;
+    }
+}
+
+/* Rest of the CSS remains unchanged */
+
+/* ... */
+
