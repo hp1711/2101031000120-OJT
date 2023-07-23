@@ -1,0 +1,3080 @@
+/* nav font  */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+/* name font*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.main-nav>li{
+    list-style: none;
+}
+
+.title-div{
+    visibility: hidden;
+    position: absolute;
+}
+
+nav{
+    width: 100%;
+    height: 65px;
+    /* border-bottom: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.nav{
+    width: 60%;
+    height: 54px;
+    background-color: rgb(245, 253, 253);
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px 4px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-nav>li>a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #213555;
+    font-family: 'Manrope', sans-serif;
+    font-size: 19px;
+    padding: 3px;
+}
+
+.main-nav>li>a:hover{
+    border-bottom: 2px solid #E86A33;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.button-drawer{
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    right: 10px;
+    visibility: hidden;
+}
+
+.nav-toggle-btn{
+    position: relative;
+    
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nav-toggle-btn.active>.one{
+    transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle-btn.active>.two{
+    opacity: 0;
+}
+
+.nav-toggle-btn.active>.three{
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+
+.nav-toggle-btn>span{
+    height: 2px;
+    width: 30px;
+    background: #213555;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-div{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.my-profile{
+    width: 95%;
+    height: 650px;
+    border-radius: 10px;
+    background-color: rgb(241, 245, 249);
+    display: flex;
+    align-items: center;
+}
+
+.inner-div{
+    width: 100%;
+    height: 550px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.inner-div-2{
+    width: 88%;
+    height: 550px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-div{
+    width: 600px;
+    height: 450px;
+    /* border: 1px solid black; */
+   
+}
+
+
+.hello-there{
+    color: #2e405a;
+    font-size: 55px;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+.hello-there>span{
+    color: #2e405a;
+    font-size: 55px;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    position: relative;
+    right: 10px;
+}
+
+.name{
+    color: #213555;
+    font-size: 65px;
+    font-family: 'Heebo', sans-serif;
+    width: 540px;
+    border-bottom: 3px solid #E86A33;
+    border-width: 5px;
+}
+
+.quote-name{
+    color: #2e405a;
+    font-size: 28px;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    margin-top: 10px;
+}
+
+.about{
+    width: 100%;
+    height: 150px;
+    margin-top: 80px;
+    border-top: 2px solid #2e405a;
+    
+    
+}
+
+.about>p{
+    color: #213555;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.image-div{
+    width: 400px;
+    height: 400px;
+    /* border: 1px solid black; */
+    position: relative;
+    right: 70px;
+}
+.image-div>img{    
+    opacity: 0.9;
+    width: 400px;
+    height: 394px;
+}
+
+.border-btm-1{
+    width: 100%;
+    height: 4px;
+    background-color: #f2956d;
+    margin-top: 40px;
+}
+
+.my-education{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.edu-div{
+    width: 90%;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgb(241, 245, 249);
+
+}
+
+.edu-title-div{
+    width: 100%;
+    height: 90px;
+}
+
+.edu-title{
+    width: 260px;
+    height: 75px;
+    font-size: 29px;
+    color: #213555;
+    font-family: 'Heebo', sans-serif;
+    border-bottom: 3px solid #364458;
+}
+
+.edu-inner-div{
+    width: 100%;
+    height: 370px;
+    /* border: 1px solid black; */
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.edu-inner-div-main{
+    width: 93%;
+    height: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+.extra{
+    all: unset;
+}
+
+.edu-inner-div-1{
+    width: 640px;
+    height: 360px;
+    /* border: 1px solid black; */
+}
+
+.edu-title-clg{
+    display: flex;
+    width: 420px;
+    height: 35px;
+    justify-content: space-around;
+}
+
+.edu-title-clg>h3{
+    color: #213555;
+    font-size: 30px;
+    font-family: 'schibsted Grotesk', sans-serif;
+    border-bottom: 3px solid #364458;
+
+}
+
+.title-icon{
+    position: relative;
+    top: 5px;
+    left: 3px;
+    height: 27px;
+    fill:#213555
+}
+
+.edu-btech{
+    width: 600px;
+    height: 140px;
+    margin-top: 40px;
+}
+
+.edu-btech-1{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    font-size: 23px;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    color: #2e405a;
+}
+.edu-btech-1>svg{
+    width: 20px;
+    position: relative;
+    top: 6px;
+    height: 12px;
+}
+
+.edu-btech-1>p{
+    margin-left: 10px;
+}
+
+.edu-btech-2>p{
+    margin-left: 10px;
+}
+
+
+.edu-btech-2{
+    display: flex;
+ 
+    margin-left: 15px;
+    font-size: 23px;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    color: #2e405a;
+    margin-top: 10px;
+}
+.edu-btech-2>svg{
+    width: 20px;
+    position: relative;
+    top: 6px;
+    height: 12px;
+}
+
+.sch-title-div{
+    display: flex;
+    width: 640px;
+    height: 35px;
+    justify-content: space-around;
+
+}
+
+.sch-title-div>h3{
+    color: #213555;
+    font-size: 30px;
+    font-family: 'schibsted Grotesk', sans-serif;
+    border-bottom: 3px solid #364458;
+
+}
+
+.sch-title-div>svg{
+    position: relative;
+    top: 6px;
+    left: 3px;
+    height:27px;
+}
+
+.edu-sch-1{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 13px;
+    font-size: 23px;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    color: #2e405a;
+    margin-top: 40px;
+    width: 390px;
+}
+
+.edu-sch-1>svg{
+    width: 20px;
+    position: relative;
+    top: 6px;
+}
+
+.edu-sch-1>p{
+    margin-left: 10px;
+}
+
+.edu-inner-div-2{
+    width: 700px;
+    height: 360px;
+    position: relative;
+    bottom: 50px;
+    /* border: 1px solid black; */
+    
+}
+
+.img-1{
+    width: 700px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-1>img{
+    opacity: 0.5;
+}
+
+/* .img-2{
+    width: 00px;
+    height: 300px;
+}
+
+.img-2>img{
+    width: 250px;
+    height: 250px;
+    opacity: 0.6;
+} */
+
+.border-btm-2{
+    width: 100%;
+    height: 4px;
+    background-color: #f2956d;
+    margin-top: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400&display=swap');
+
+.my-skill{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.skill-inner{
+    width: 90%;
+    height: 600px;
+    border-radius: 10px;
+    background-color: rgb(241, 245, 249);
+}
+
+.skill-title-div{
+    width: 100%;
+    height: 100px;
+}
+
+.skill-title{
+    width: 145px;
+    height: 75px;
+    border-bottom: 3px solid #364458;
+    position: relative;
+    left: 35px;
+    top: 10px;
+    font-size: 29px;
+    color: #213555;
+    font-family: 'Heebo', sans-serif;
+}
+
+.skill-main-div{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.skill-main-inner{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.skill-div-1{
+    width: 700px;
+    height: 450px;
+    /* border: 1px solid black; */
+}
+
+
+.skill-title-1{
+    display: flex;
+    justify-content: space-around;
+    width: 320px;
+    height: 50px;
+    position: relative;
+    left: 35px;
+    top: 10px;
+    font-size: 32px;
+    color: #213555;
+    font-family: 'Heebo', sans-serif;
+}
+
+.skill-title-1>svg{
+    position: relative;
+    top: 12px;
+    
+}
+
+.skill-title-1>h3{
+    border-bottom: 3px solid #E86A33;
+    margin-left: 10px;
+}
+
+.skill-list-div{
+    width: 80%;
+    height: 150px;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.skill-list-inner{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+    /* border:1px solid black; */
+}
+
+.skill-1,.skill-2,.skill-3{
+    width: 140px;
+    height: 110px;
+    /* border:1px solid black; */
+}
+
+ul{
+    color: #213555;
+    font-size: 25px;
+    font-family:  'Schibsted Grotesk', sans-serif;;
+}
+
+.skill-title-2{
+    display: flex;
+    justify-content: space-around;
+    width: 230px;
+    height: 50px;
+    font-size: 32px;
+    color: #213555;
+    font-family: 'Heebo', sans-serif;
+    position: relative;
+    left: 35px;
+}
+
+.skill-title-2>svg{
+    position: relative;
+    top: 12px;
+    
+}
+
+.skill-title-2>h3{
+    border-bottom: 3px solid #E86A33;
+    
+}
+
+
+.skill-list-div-2{
+    width: 80%;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 35px;
+    /* border: 1px solid black; */
+}
+
+.skill-list-inner-2{
+    display: flex;
+    width: 90%;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+    /* border:1px solid black; */
+}
+
+.skill-1-2,.skill-2-2{
+    width: 140px;
+    height: 110px;
+    /* border:1px solid black; */
+}
+
+ul{
+    color: #213555;
+    font-size: 25px;
+    font-family:  'Schibsted Grotesk', sans-serif;;
+}
+
+.skill-div-2{
+    width: 600px;
+    height: 450px;
+    position: relative;
+    bottom: 50px;
+    /* border: 1px solid black; */
+}
+
+.skill-div-2>img{
+    width: 550px;
+    opacity: 0.5;
+}
+
+.border-btm-3{
+    width: 100%;
+    height: 4px;
+    background-color: #f2956d;
+    margin-top: 20px;
+}
+
+.my-project{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.project-inner{
+    width: 90%;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgb(241, 245, 249);
+}
+
+.project-title-div{
+    width: 100%;
+    height: 100px;
+}
+
+.project-title{
+    width: 220px;
+    height: 80px;
+    border-bottom: 3px solid #364458;
+    position: relative;
+    left: 35px;
+    top: 10px;
+    font-size: 29px;
+    color: #213555;
+    font-family: 'Heebo', sans-serif;
+}
+
+.project-main-div{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.project-main-inner{
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.project-div-1{
+    width: 700px;
+    height: 350px;
+    /* border: 1px solid black; */
+}
+
+
+.project-title-fend{
+    display: flex;
+    justify-content: space-around;
+    width: 380px;
+    height: 50px;
+    position: relative;
+    left: 35px;
+    top: 20px;
+    font-size: 32px;
+    color: #213555;
+    font-family: 'Heebo', sans-serif
+}
+
+.project-title-fend>svg{
+    position: relative;
+    top: 13px;
+}
+
+.project-title-fend>h3{
+    border-bottom: 3px solid #E86A33;
+    margin-left: 10px;
+}
+
+.project-list{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid black; */
+}
+
+.project-list-inner{
+    width: 90%;
+    height: 250px;
+    /* border: 1px solid black; */
+    margin-top: 30px;
+}
+
+.en-title{
+    width: 450px;
+    height: 35px;
+    color: #213555;
+    font-size: 23px;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.project-list-div{
+    width: 350px;
+    height: 140px;
+    margin-top: 35px;
+    margin-left: 90px;
+    border-bottom: 2px solid #364458;
+}
+
+.project-div-2{
+    width: 400px;
+    height: 350px;
+    /* border: 1px solid black; */
+    position: relative;
+    right: 25px;
+}
+.project-div-2>img{
+    width: 350px;
+    height: 339px;
+    opacity: 0.7;
+}
+
+.border-btm-4{
+    width: 100%;
+    height: 4px;
+    background-color: #f2956d;
+    margin-top: 20px;
+}
+
+.my-contact{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact-inner{
+    width: 40%;
+    height: 450px;
+    border-radius: 10px;
+    background-color: rgb(241, 245, 249);
+}
+
+.contact-title-div{
+    width: 100%;
+    height: 100px;
+}
+
+.contact-title{
+    width: 205px;
+    height: 75px;
+    border-bottom: 3px solid #364458;
+    position: relative;
+    left: 35px;
+    top: 10px;
+    font-size: 29px;
+    color: #213555;
+    font-family: 'Heebo', sans-serif;
+}
+
+.contact-info{
+    width: 485px;
+    color: #2e405a;
+    font-size: 22px;
+    font-family: 'Heebo', sans-serif;
+    border-bottom: 2px solid #f2956d;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.contact-list{
+    width: 500px;
+    height: 250px;
+    /* border: 1px solid black; */
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.contact-list-inner{
+    width: 400px;
+    height: 250px;
+    /* border: 1px solid black; */
+}
+
+.contact-1{
+    width: 250px;
+}
+
+.contact-2{
+    width: 290px;
+    margin-top: 10px;
+}
+
+.contact-3{
+    width: 250px;
+    margin-top: 10px;
+}
+
+.contact-4{
+    width: 250px;
+    margin-top: 10px;
+}
+
+.contact-1>a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: #2e405a;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-size: 21px;
+}
+
+.contact-2>a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: #2e405a;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-size: 21px;
+}
+
+.contact-3>a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: #2e405a;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-size: 21px;
+}
+
+.contact-4>a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: #2e405a;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-size: 21px;
+}
+
+.contact-1>svg{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    height: 25px;
+}
+
+.contact-2>svg{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    height: 25px;
+}
+
+.contact-3>svg{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    height: 25px;
+}
+
+.contact-4>svg{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    height: 25px;
+}
+
+.border-btm-5{
+    width: 100%;
+    height: 4px;
+    background-color: #f2956d;
+    margin-top: 15px;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 245, 249);
+    color: #364458;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif
+}
+
+@media (max-width:1500px){
+    .contact-inner{
+        width: 45%;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    
+    .nav{
+        width: 70%;
+        height: 52px;
+    }
+
+    .hello-there{ 
+        font-size: 50px;
+    }
+
+    .hello-there>span{ 
+        font-size: 50px;
+    }
+
+    .name{
+        font-size: 60px;
+        width: 500px;
+    }
+
+    .quote-name{
+        font-size: 25px;
+    }
+    
+    .about>p{
+        font-size: 20px;
+    }
+
+    .name-div{
+        width: 500px;
+        height: 440px;
+    }
+
+    .image-div{
+        width: 350px;
+        height: 350px;
+        position: relative;
+        right: 50px;
+    }
+
+    .image-div>img{
+        width: 350px;
+        height: 344px;
+    }
+
+    .edu-title{
+        width: 240px;
+        height: 70px;
+        font-size: 27px;
+    }
+
+    .edu-title-clg{
+        width: 400px;
+        height: 35px;
+    }
+
+    .title-icon{
+        height: 25px;
+    }
+
+    .edu-title-clg>h3{
+        font-size: 28px;
+    }
+
+    .edu-btech{
+        width: 550px;
+        height: 140px;
+    }
+
+    .edu-btech-1{
+        font-size: 21px;
+    }
+
+    .edu-btech-1>svg{
+        width: 18px;
+        position: relative;
+        top: 6px;
+    }
+
+    .edu-btech-1>p{
+        margin-left: 8px;
+    }
+
+    .edu-btech-2>p{
+        margin-left: 8px;
+    }
+
+    .edu-btech-2{
+        font-size: 21px;
+    }
+
+    .edu-btech-2>svg{
+        width: 18px;
+        position: relative;
+        top: 6px;
+    }
+
+    .sch-title-div{
+        width: 590px;
+        height: 35px;
+    }
+
+    .sch-title-div>h3{
+        font-size: 28px;
+    }
+
+    .sch-title-div>svg{
+        position: relative;
+        top: 6px;
+        left: 3px;
+        height: 25px;
+    }
+
+    .edu-sch-1{
+        width: 350px;
+        font-size: 21px;
+    }
+
+    .edu-sch-1>svg{
+        width: 18px;
+        position: relative;
+        top: 6px;
+    }
+
+    .edu-sch-1>p{
+        margin-left: 8px;
+    }
+
+    .edu-inner-div-1{
+        width: 592px;
+        height: 360px;
+    }
+
+    .edu-inner-div-2{
+        width: 630px;
+        height: 360px;
+    }
+
+    .img-1{
+        width: 630px;
+        height: 360px;
+    }
+
+    .skill-title{
+        width: 135px;
+        font-size: 27px;
+    }
+
+    .skill-div-1{
+        width: 580px;
+    }
+
+    .skill-title-1{
+        width: 300px;
+        height: 45px;
+        font-size: 30px;
+    }
+
+    .skill-title-1>svg{
+        top: 10px;
+    }
+
+    .skill-1,.skill-2,.skill-3{
+        width: 135px;
+        height: 105px;
+    }
+
+    ul{
+        font-size: 23px;
+    }
+
+    .skill-title-2{
+        width: 210px;
+        height: 45px;
+        font-size: 30px;
+    }
+
+    .skill-title-2>svg{
+        top: 10px;
+    }
+
+    .skill-1-2,.skill-2-2{
+        width: 135px;
+        height: 105px;
+    }
+
+    ul{
+        font-size: 23px;
+    }
+
+    .skill-list-inner-2{
+        width: 85%;
+    }
+
+    .skill-div-2{
+        width: 530px;
+    }
+
+    .skill-div-2>img{
+        width: 500px;
+    }
+
+    .project-title{
+        width: 200px;
+        font-size: 27px;
+    }
+
+    .project-div-1{
+        width: 600px;
+        height: 350px;
+    }
+
+    .project-title-fend{
+        width: 350px;
+        font-size: 30px;
+    }
+
+    .project-title-fend>svg{
+        top: 10px;
+    }
+
+    .project-list{
+        width: 100%;
+        height: 400px;
+    }
+
+    .project-list-inner{
+        width: 90%;
+        height: 250px;
+    }
+
+    .en-title{
+        width: 420px;
+        height: 35px;
+        font-size: 23px;
+    }
+
+    .project-list-div{
+        width: 330px;
+        height: 140px;
+    }
+
+    .project-div-2{
+        width: 400px;
+        height: 350px;
+    }
+
+    .project-div-2>img{
+        width: 350px;
+        height: 339px;
+    }
+
+    .contact-title{
+        font-size: 27px;
+        width: 195px;
+        height: 70px;
+    }
+    
+
+
+}
+
+@media (max-width: 1300px) {
+    
+
+    .hello-there{ 
+        font-size: 45px;
+    }
+
+    .hello-there>span{ 
+        font-size: 45px;
+    }
+
+    .name{
+        font-size: 55px;
+        width: 470px;
+    }
+
+    .quote-name{
+        font-size: 22px;
+    }
+    
+    .about>p{
+        font-size: 20px;
+    }
+
+    .name-div{
+        width: 500px;
+        height: 430px;
+    }
+
+    .image-div{
+        width: 300px;
+        height: 300px;
+        right: 50px;
+        bottom: 30px;
+    }
+
+    .image-div>img{
+        width: 300px;
+        height: 295px;
+    }
+
+    .edu-title{
+        width: 230px;
+        height: 67.5px;
+        font-size: 25px;
+    }
+
+    .edu-title-clg{
+        width: 390px;
+        height: 35px;
+    }
+
+    /* no icon changes  */
+
+    .edu-title-clg>h3{
+        font-size: 27px;
+    }
+
+    .edu-btech{
+        width: 500px;
+        height: 140px;
+    }
+
+    .edu-btech-1{
+        font-size: 20px;
+    }
+
+    .edu-btech-1>svg{
+        width: 17px;
+        position: relative;
+        top: 6px;
+    }
+
+    .edu-btech-1>p{
+        margin-left: 7px;
+    }
+
+    .edu-btech-2>p{
+        margin-left: 7px;
+    }
+
+    .edu-btech-2{
+        font-size: 20px;
+    }
+
+
+    .edu-btech-2>svg{
+        width: 17px;
+        position: relative;
+        top: 6px;
+    }
+
+    .sch-title-div{
+        width: 570px;
+        height: 35px;
+    }
+
+    .sch-title-div>h3{
+        font-size: 27px;
+    }
+
+    .sch-title-div>svg{
+        position: relative;
+        top: 6px;
+        left: 3px;
+        height: 25px;
+    }
+
+    .edu-sch-1{
+        width: 340px;
+        font-size: 20px;
+    }
+
+    .edu-sch-1>svg{
+        width: 17px;
+        position: relative;
+        top: 6px;
+    }
+
+    .edu-sch-1>p{
+        margin-left: 7px;
+    }
+
+    .edu-inner-div-1{
+        width: 570px;
+        height: 360px;
+    }
+
+    .edu-inner-div-2{
+        width: 500px;
+        height: 310px;
+    }
+
+    .img-1{
+        width: 500px;
+        height: 310px;
+    }
+
+    .skill-title{
+        width: 125px;
+        font-size: 25px;
+        height: 70px;
+    }
+
+    .skill-div-1{
+        width: 570px;
+    }
+
+    .skill-title-1{
+        width: 290px;
+        height: 45px;
+        font-size: 29px;
+    }
+
+    .skill-1, .skill-2, .skill-3{
+        width: 125px;
+        height: 95px;
+    }
+
+    ul{
+        font-size: 21px;
+    }
+
+    .skill-title-2{
+        width: 200px;
+        font-size: 29px;
+    }
+
+    .skill-title-2>svg{
+        top: 12px;
+    }
+
+    .skill-1-2, .skill-2-2{
+        width: 125px;
+        height: 95px;
+    }
+
+    .skill-list-inner-2{
+        width: 85%;
+    }
+
+    .skill-div-2{
+        width: 500px;
+    }
+
+    .skill-div-2>img{
+        width: 470px;
+    }
+
+    .project-title{
+        width: 190px;
+        height: 70px;
+        font-size: 25px;
+    }
+
+    .project-div-1{
+        width: 550px;
+        height: 350px;
+    }
+
+    .project-title-fend{
+        width: 320px;
+        height: 45px;
+        font-size: 27px;
+    }
+
+    .project-title-fend>svg{
+        top: 10px;
+    }
+
+    .project-list{
+        width: 100%;
+        height: 400px;
+    }
+
+    .project-list-inner{
+        width: 90%;
+        height: 250px;
+    }
+
+    .en-title{
+        width: 400px;
+        height: 35px;
+        font-size: 21px;
+    }
+
+    .project-list-div{
+        width: 310px;
+        height: 130px;
+        margin-top: 30px;
+    }
+
+    .project-div-2{
+        width: 350px;
+        height: 350px;
+    }
+
+    .project-div-2>img{
+        width: 330px;
+        height: 339px;
+    }
+
+    .contact-inner{
+        height: 400px;
+    }
+    .contact-title{
+        font-size: 25px;
+        width: 185px;
+        height: 65px;
+    }
+
+    .contact-title-div{
+        height: 90px;
+    }
+
+    .contact-info{
+        width: 463px;
+        margin-left: 65px;
+        font-size: 21px;
+    }
+
+    .contact-list{
+        width: 400px;
+        height: 200px;
+    }
+    
+    .contact-list-inner{
+        width: 370px;
+        height: 200px;
+    }
+
+    .contact-1>a{
+        font-size: 19px;
+    }
+
+    .contact-1>svg{
+        height: 23px;
+    }
+
+    .contact-2>a{
+        font-size: 19px;
+    }
+
+    .contact-2>svg{
+        height: 23px;
+    }
+
+    .contact-3>a{
+        font-size: 19px;
+    }
+
+    .contact-3>svg{
+        height: 23px;
+    }
+
+    .contact-4>a{
+        font-size: 19px;
+    }
+
+    .contact-4>svg{
+        height: 23px;
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+    
+    .nav{
+        width: 80%;
+    }
+
+    .edu-inner-div-2{
+        width: 450px;
+        height: 260px;
+    }
+
+    .img-1{
+        width: 450px;
+        height: 260px;
+    }
+
+    .skill-div-2{
+        width: 450px;
+    }
+
+    .skill-div-2>img{
+        width: 420px;
+    }
+
+    .skill-list-div{
+        margin-top: 25px;
+    }
+
+    .skill-list-div-2{
+        margin-top: 10px;
+    }
+
+    .skill-list-inner-2{
+        width: 93%;
+    }
+
+    .project-div-2{
+        width: 300px;
+        height: 300px;
+    }
+
+    .project-div-2>img{
+        width: 280px;
+        height: 289px;
+    }
+
+    .contact-info{
+        margin-left: 50px;
+    }
+
+    .contact-inner{
+        width: 50%;
+    }
+
+    .contact-list{
+        margin-left: 65px;
+    }
+
+}
+
+@media (max-width:1100px){
+    .hello-there{ 
+        font-size: 40px;
+    }
+
+    .hello-there>span{ 
+        font-size: 40px;
+    }
+
+    .name{
+        font-size: 50px;
+        width: 450px;
+    }
+
+    .quote-name{
+        font-size: 20px;
+    }
+    
+    .about>p{
+        font-size: 18px;
+    }
+
+    .name-div{
+        width: 450px;
+        height: 400px;
+    }
+
+    .image-div{
+        width: 250px;
+        height: 250px;
+        right: 50px;
+        bottom: 60px;
+    }
+
+    .image-div>img{
+        width: 250px;
+        height: 246px;
+    }
+
+    .edu-title{
+        width: 205px;
+        height: 62.5px;
+        font-size: 23px;
+
+    }
+
+    .edu-title-clg{
+        width: 370px;
+        height: 35px;
+    }
+
+    .edu-title-clg>h3{
+        font-size: 25px;
+    }
+
+    /* .title-icon{
+        height: 25px;
+    } no changes*/
+
+    .edu-btech{
+        width: 450px;
+        height: 140px;
+    }
+
+    .edu-btech-1{
+        font-size: 19px;
+    }
+
+    .edu-btech-1>svg{
+        width: 16px;
+        position: relative;
+        top: 6px;
+    }
+
+    .edu-btech-1>p{
+        margin-left: 6px;
+    }
+
+    .edu-btech-2>p{
+        margin-left: 6px;
+    }
+
+    .edu-btech-2{
+        font-size: 19px;
+    }
+
+    .edu-btech-2>svg{
+        width: 16px;
+        position: relative;
+        top: 6px;
+    }
+
+    .sch-title-div{
+        width: 550px;
+        height: 35px;
+    }
+
+    .sch-title-div>h3{
+        font-size: 25px;
+    }
+
+    .sch-title-div>svg{
+        position: relative;
+        top: 6px;
+        left: 3px;
+        height: 25px;
+    }
+
+    .edu-sch-1{
+        width: 330px;
+        font-size: 19px;
+    }
+
+    .edu-sch-1>svg{
+        width: 16px;
+        position: relative;
+        top: 6px;
+    }
+
+    .edu-sch-1>p{
+        margin-left: 6px;
+    }
+
+    .edu-inner-div-1{
+        width: 550px;
+        height: 360px;
+    }
+
+    .edu-inner-div-2{
+        width: 360px;
+        height: 220px;
+    }
+
+    .img-1{
+        width: 360px;
+        height: 220px;
+    }
+
+    .skill-title{
+        width: 115px;
+        font-size: 23px;
+        height: 65px;
+    }
+
+    .skill-div-1{
+        width: 550px;
+    }
+
+    .skill-title-1{
+        width: 280px;
+        height: 45px;
+        font-size: 27px;
+    }
+
+    .skill-1, .skill-2, .skill-3{
+        width: 115px;
+        height: 85px;
+    }
+
+    ul{
+        font-size: 19px;
+    }
+
+    .skill-title-2{
+        width: 190px;
+        font-size: 27px;
+    }
+
+    .skill-title-2>svg{
+        top: 12px;
+    }
+
+    .skill-1-2, .skill-2-2{
+        width: 115px;
+        height: 85px;
+    }
+
+    .skill-div-2{
+        width: 380px;
+        position: relative;
+        right: 50px;
+        top: 20px;
+    }
+
+    .skill-div-2>img{
+        width: 380px;
+    }
+
+    .skill-list-div{
+        margin-top: 10px;
+    }
+
+    .skill-list-div-2{
+        margin-top: 5px;
+    }
+
+    .skill-inner{
+        height: 550px;
+    }
+
+    .project-title{
+        width: 180px;
+        height: 67px;
+        font-size: 23px;
+    }
+
+    .project-div-1{
+        width: 500px;
+        height: 350px;
+    }
+
+    .project-title-fend{
+        width: 300px;
+        font-size: 25px;
+    }
+
+
+    .en-title{
+        width: 380px;
+        height: 35px;
+        font-size: 19px;
+    }
+
+    .project-list-div{
+        width: 300px;
+        height: 120px;
+        margin-top: 25px;
+    }
+
+    .project-div-2{
+        width: 270px;
+        height: 270px;
+    }
+
+    .project-div-2>img{
+        width: 250px;
+        height: 259px;
+    }
+
+    .my-contact{
+        height: 450px;
+    }
+
+    .contact-title{
+        font-size: 21px;
+        width: 175px;
+        height: 60px;
+        width: 150px;
+        height: 55px;
+    }
+
+    .contact-info{
+        font-size: 19px;
+        width: 420px;
+    }
+
+    .contact-1>a{
+        font-size: 17px;
+    }
+
+    .contact-1>svg{
+        height: 20px;
+    }
+
+    .contact-2>a{
+        font-size: 17px;
+    }
+
+    .contact-2>svg{
+        height: 20px;
+    }
+
+    .contact-3>a{
+        font-size: 17px;
+    }
+
+    .contact-3>svg{
+        height: 20px;
+    }
+
+    .contact-4>a{
+        font-size: 17px;
+    }
+
+    .contact-4>svg{
+        height: 20px;
+    }
+
+    .contact-inner{
+        height: 350px;
+    }
+
+    .contact-list{
+        height: 160px;
+    }
+
+    .contact-list-inner{
+        height: 160px;
+    }
+
+}
+
+@media (max-width:1000px){
+    .hello-there{ 
+        font-size: 35px;
+    }
+
+    .hello-there>span{ 
+        font-size: 35px;
+    }
+
+    .name{
+        font-size: 45px;
+        width: 400px;
+    }
+
+    .quote-name{
+        font-size: 18px;
+    }
+    
+    .about>p{
+        font-size: 16px;
+    }
+
+    .name-div{
+        width: 400px;
+        height: 370px;
+    }
+
+    .image-div{
+        width: 250px;
+        height: 250px;
+        right: 50px;
+        bottom: 60px;
+    }
+    
+    .image-div>img{
+        width: 250px;
+        height: 246px;
+    }
+    .edu-title{
+        width: 190px;
+        font-size: 21px;
+    }
+
+    .edu-title-clg{
+        width: 350px;
+        height: 35px;
+    }
+
+    .edu-title-clg>h3{
+        font-size: 23px;
+    }
+
+    .title-icon{
+        height: 23px;
+    }
+
+    .edu-btech{
+        width: 400px;
+        height: 140px;
+    }
+
+    .edu-btech-1{
+        font-size: 18px;
+    }
+
+    .edu-btech-1>svg{
+        width: 15px;
+        position: relative;
+        top: 6px;
+    }
+
+    .edu-btech-1>p{
+        margin-left: 5px;
+    }
+
+    .edu-btech-2>p{
+        margin-left: 5px;
+    }
+
+    .edu-btech-2{
+        font-size: 18px;
+    }
+
+    .edu-btech-2>svg{
+        width: 15px;
+        position: relative;
+        top: 6px;
+    }
+
+    .sch-title-div{
+        width: 510px;
+        height: 35px;
+    }
+
+    .sch-title-div>h3{
+        font-size: 23px;
+    }
+
+    .sch-title-div>svg{
+        position: relative;
+        top: 4px;
+        left: 3px;
+        height: 25px;
+    }
+
+    .edu-sch-1{
+        width: 320px;
+        font-size: 18px;
+    }
+
+    .edu-sch-1>svg{
+        width: 15px;
+        position: relative;
+        top: 6px;
+    }
+
+    .edu-sch-1>p{
+        margin-left: 5px;
+    }
+
+    .edu-inner-div-1{
+        width: 530px;
+        height: 360px;
+    }
+
+    .edu-inner-div-2{
+        width: 300px;
+        height: 240px;
+    }
+
+    .img-1{
+        width: 300px;
+        height: 180px;
+        position: relative;
+        top: 40px;
+    }
+
+
+
+    .skill-title{
+        width: 105px;
+        font-size: 21px;
+        height: 60px;
+    }
+
+    .skill-div-1{
+        width: 530px;
+    }
+
+    .skill-title-1{
+        width: 270px;
+        height: 45px;
+        font-size: 25px;
+    }
+
+    .skill-1, .skill-2, .skill-3{
+        width: 105px;
+        height: 75px;
+    }
+
+    ul{
+        font-size: 17px;
+    }
+
+    .skill-title-2{
+        width: 180px;
+        font-size: 25px;
+    }
+
+    .skill-title-2>svg{
+        top: 12px;
+    }
+
+    .skill-1-2, .skill-2-2{
+        width: 105px;
+        height: 75px;
+    }
+
+
+    .skill-div-2{
+        width: 350px;
+        position: relative;
+        right: 60px;
+        top: 30px;
+    }
+
+    .skill-div-2>img{
+        width: 340px;
+
+    }
+
+    .skill-list-div{
+        margin-top: 5px;
+    }
+
+
+    .skill-list-div-2{
+        margin-top: -5px;
+    }
+
+    .project-title{
+        width: 160px;
+        height: 65px;
+        font-size: 21px;
+    }
+
+    .project-div-1{
+        width: 450px;
+        height: 300px;
+    }
+
+    .project-title-fend{
+        width: 270px;
+        font-size: 23px;
+    }
+
+    .en-title{
+        width: 360px;
+        height: 35px;
+        font-size: 17px;
+        margin-left: 50px;
+    }
+
+    .project-list-div{
+        width: 270px;
+        height: 100px;
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+
+    .project-list-inner{
+        height: 200px;
+    }
+
+    .contact-inner{
+        width: 55%;
+    }
+}
+
+@media (max-width: 930px) {
+    nav{
+        align-items: initial;
+
+    }
+    
+    .nav{
+        width: 100%;
+        box-shadow: 1.5px 2.5px 4px 2px rgba(0, 0, 0, 0.2);
+        height: 54px;
+    }
+    
+    a{
+       font-size: 17px;
+    }
+
+    .edu-inner-div-2{
+        visibility: hidden;
+    }
+
+    .img-1{
+        visibility: hidden;
+    }
+
+    .edu-div{
+        width: 75%;
+    }
+
+    .edu-title-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 3px solid #213555;
+        height: 75px;
+    }
+
+    .edu-title{
+        width: 190px;
+        font-size: 20px; 
+        border: none;   
+    }
+    .edu-inner-div{
+       position: relative;
+       left: 40px;
+    }
+
+    .skill-title-div{
+        display: flex;
+        justify-content: center;
+        height: 65px;
+        border-bottom:3px solid #364458;;
+    }
+
+    .skill-title{
+        position: relative;
+        top: 0;
+        left: 0;
+        border: none;
+    }
+
+    .skill-div-2{
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+    }
+
+    .skill-inner{
+        width: 75%;
+        height: 500px;
+    }
+
+    .my-project{
+        height: 560px;
+    }
+
+    .project-div-2{
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+    }
+
+    .project-inner{
+        width: 75%;
+        height: 450px;
+    }
+
+    .project-main-inner{
+        height: 350px;
+    }
+
+    .contact-inner{
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 840px) {
+    .image-div{
+        width: 230px;
+        height: 230px;
+        right: 20px;
+    }
+
+    .image-div>img{
+        width: 230px;
+        height: 226px;
+    }
+
+
+    .edu-inner-div{
+        left: 10px;
+    }
+
+
+}
+
+@media (max-width: 800px) {
+   
+    
+    .main-nav{
+       visibility: hidden;
+       width: 100%;
+       height: 100%;
+    }
+
+    .button-drawer{
+      visibility: visible;
+    }
+
+    .title-div{
+        visibility: visible;
+        position: absolute;
+       text-align: center;
+       color: #213555;
+       font-family: 'Manrope', sans-serif;
+       font-size: 20px;
+    }
+
+ 
+    
+    .title-div.active{
+        border-bottom: 2px solid #213555;
+    }
+
+    .main-nav.active{
+        visibility: visible;
+        position: absolute;
+        top: 54px;
+        left: 0;
+        width: 100%;
+        height: 750px;
+        background-color: rgb(245, 253, 253);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+    }
+
+    a{
+     
+        font-size: 25px;            
+    }
+
+    .my-profile{
+        height: 700px;
+    }
+
+    .inner-div-2{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+   
+        height: 700px;
+    }
+
+    .inner-div{
+        height: 700px;
+    }
+
+    .image-div{
+        top: 20px;
+        right: auto;
+    }
+
+    .name-div{
+        width: 430px;
+        height: 400px;
+    }
+
+    .hello-there{ 
+        font-size: 35px;
+    }
+
+    .hello-there>span{ 
+        font-size: 35px;
+    }
+
+    .name{
+        font-size: 45px;
+        width: 380px;
+    }
+
+    .quote-name{
+        font-size: 23px;
+    }
+    
+    .about>p{
+        font-size: 20px;
+    }
+
+    .edu-div{
+        height: 550px;
+    }
+
+
+
+    .edu-title-clg{
+        width: 360px;
+        height: 35px;
+    }
+
+    .edu-title-clg>h3{
+        font-size: 25px;
+    }
+
+    .title-icon{
+        height: 25px;
+    }
+
+    .edu-btech{
+        width: 400px;
+        height: 140px;
+    }
+
+    .edu-btech-1{
+        font-size: 20px;
+    }
+
+    .edu-btech-1>svg{
+        width: 18px;
+        position: relative;
+        top: 6px;
+    }
+
+    .edu-btech-1>p{
+        margin-left: 8px;
+    }
+
+    .edu-btech-2>p{
+        margin-left: 8px;
+    }
+
+    .edu-btech-2{
+        font-size: 20px;
+    }
+
+    .edu-btech-2>svg{
+        width: 18px;
+        position: relative;
+        top: 6px;
+    }
+
+    .sch-title-div{
+        width: 540px;
+        height: 35px;
+        margin-top: 50px;
+    }
+
+    .sch-title-div>h3{
+        font-size: 25px;
+    }
+
+    .sch-title-div>svg{
+        position: relative;
+        top: 6px;
+        left: 3px;
+        height: 25px;
+    }
+
+    .edu-sch-1{
+        width: 335px;
+        font-size: 20px;
+    }
+
+    .edu-sch-1>svg{
+        width: 18px;
+        position: relative;
+        top: 6px;
+    }
+
+    .edu-sch-1>p{
+        margin-left: 8px;
+    }
+
+    .edu-inner-div-1{
+        width: 500px;
+        height: 360px;
+    }
+
+    .edu-inner-div{
+        position: relative;
+        left: -10px;
+     }
+
+     .contact-title{
+        font-size: 19px;
+        width: 135px;
+        height: 50px;
+     }
+
+     .contact-title-div{
+        height: 70px;
+     }
+
+     .contact-info{
+        font-size: 18px;
+        width: 400px;
+        margin-left: 40px;
+     }
+
+     .contact-list{
+        margin-left: 40px;
+     }
+
+     .contact-1>a{
+        font-size: 16px;
+     }
+
+     .contact-2>a{
+        font-size: 16px;
+     }
+
+
+     .contact-3>a{
+        font-size: 16px;
+     }
+
+
+     .contact-4>a{
+        font-size: 16px;
+     }
+
+
+}
+
+@media (max-width:730px){
+  .edu-div{
+        width: 95%;
+  }
+
+  .contact-inner{
+    width: 65%;
+    height: 310px;
+  }
+}
+
+@media (max-width:680px){
+    .contact-inner{
+        width: 75%;
+        height: 310px;
+      }
+}
+
+@media (max-width:600px){
+    .hello-there{ 
+        font-size: 30px;
+    }
+
+    .hello-there>span{ 
+        font-size: 30px;
+    }
+
+    .name{
+        font-size: 40px;
+        width: 350px;
+    }
+
+    .quote-name{
+        font-size: 20px;
+    }
+    
+    .about>p{
+        font-size: 18px;
+    }
+
+    .name-div{
+        width: 350px;
+        height: 390px;
+    }
+
+    .image-div{
+        width: 200px;
+        height: 200px;
+        right: auto;
+    }
+
+    .image-div>img{
+        width: 200px;
+        height: 197px;
+    }
+
+    .edu-title-clg{
+        width: 310px;
+        height: 35px;
+    }
+
+    .edu-title-clg>h3{
+        font-size: 21px;
+    }
+
+    .title-icon{
+        height: 21px;
+    }
+
+    .edu-btech{
+        width: 350px;
+        height: 140px;
+    }
+
+    .edu-btech-1{
+        font-size: 18px;
+    }
+
+    .edu-btech-1>svg{
+        width: 16px;
+        position: relative;
+        top: 6px;
+    }
+
+    .edu-btech-1>p{
+        margin-left: 6px;
+    }
+
+    .edu-btech-2>p{
+        margin-left: 6px;
+    }
+
+    .edu-btech-2{
+        font-size: 18px;
+    }
+
+    .edu-btech-2>svg{
+        width: 16px;
+        position: relative;
+        top: 6px;
+    }
+
+    .sch-title-div{
+        width: 465px;
+        height: 35px;
+        margin-top: 50px;
+    }
+
+    .sch-title-div>h3{
+        font-size: 21px;
+    }
+
+    .sch-title-div>svg{
+        position: relative;
+        top: 6px;
+        left: 3px;
+        height: 21px;
+    }
+
+    .edu-sch-1{
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .edu-sch-1>svg{
+        width: 16px;
+        position: relative;
+        top: 6px;
+    }
+
+    .edu-sch-1>p{
+        margin-left: 6px;
+    }
+
+    .edu-inner-div-1{
+        width: 480px;
+        height: 360px;
+    }
+
+    .skill-inner{
+        height: 630px;
+    }
+
+    .skill-title-div{
+        height: 60px;
+    }
+
+    .skill-title{
+        height: 55px;
+        font-size: 19px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .skill-div-1{
+        width: 480px;
+    }
+
+    .skill-title-1{
+        width: 220px;
+        height: 45px;
+        font-size: 21px;
+    }
+
+    .skill-list-div{
+        width: 45%;
+        margin-left: 30px;
+        margin-top: 20px;
+        height: 210px;
+    }
+    .skill-list-inner{
+        flex-direction: column;
+        height: 100%;
+
+    }
+
+    .skill-1, .skill-2, .skill-3{
+        width: 100px;
+        height: 75px;
+    }
+
+    ul{
+        font-size: 16px;
+    }
+
+    .skill-title-2{
+        width: 150px;
+        height: 40px;
+        font-size: 21px;
+        margin-top: 20px;
+    }
+    
+    .skill-list-div-2{
+        width: 45%;
+        height: 210px;
+        margin-left: 22px;
+        margin-top: 20px;
+    }
+
+    .skill-list-inner-2{
+        height: 170px;
+        width: 201px;
+        flex-direction: column;
+    }
+
+    .my-project{
+        height: 490px;
+    }
+
+    .my-contact{
+        height: 380px;
+    }
+
+    .contact-title{
+        left: 25px;
+    }
+
+    .contact-info{
+        margin-left: 30px;
+        font-size: 16px;
+        width: 351px;
+    }
+
+    .contact-1>a{
+        font-size: 14px;
+    }
+
+    .contact-2>a{
+        font-size: 14px;
+    }
+
+    .contact-3>a{
+        font-size: 14px;
+    }
+
+    .contact-4>a{
+        font-size: 14px;
+    }
+
+    .contact-2{
+        margin-top: 7px;
+    }
+
+    .contact-3{
+        margin-top: 7px;
+    }
+
+    .contact-4{
+        margin-top: 7px;
+    }
+
+    .contact-list{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width:550px){
+
+
+    .contact-inner{
+        width: 85%;
+        height: 310px;
+    }
+
+    .footer{
+       font-size: 20px;
+    }
+}
+
+@media (max-width:500px){
+    .edu-title{
+        font-size: 18px;
+    }
+
+    .edu-title-clg{
+        width: 280px;
+    }
+
+    .edu-title-clg>h3{
+        font-size: 18px;
+    }
+
+    .title-icon{
+        height: 18px;
+    }
+
+    .edu-btech{
+        width: 350px;
+        height: 140px;
+    }
+
+    .edu-btech-1{
+        font-size: 15px;
+    }
+
+    .edu-btech-1>svg{
+        width: 14px;
+        position: relative;
+        top: 6px;
+    }
+
+    .edu-btech-1>p{
+        margin-left: 4px;
+    }
+
+    .edu-btech-2>p{
+        margin-left: 4px;
+    }
+
+    .edu-btech-2{
+        font-size: 15px;
+    }
+
+    .edu-btech-2>svg{
+        width: 14px;
+        position: relative;
+        top: 6px;
+    }
+
+
+
+    .sch-title-div{
+        width: 400px;
+        height: 30px;
+    }
+
+    .sch-title-div>h3{
+        font-size: 18px;
+    }
+
+    .sch-title-div>svg{
+        position: relative;
+        top: 6px;
+        left: 3px;
+        height: 18px;
+    }
+
+    .edu-sch-1{
+        width: 260px;
+        font-size: 15px;
+    }
+
+    .skill-list-div{
+        margin-left: 40px;
+    }
+
+    .project-title-fend{
+        left: 20px;
+    }
+
+    .en-title{
+        margin-left: 15px;
+    }
+
+    .project-list-div{
+        margin-left: 30px;
+    }
+
+    .project-main-inner{
+        height: 330px;
+    }
+
+    .project-div-1{
+        width: 330px;
+    }
+}
+
+@media (max-width:450px){
+    .project-title-fend{
+        left: 10px;
+    }
+
+    .en-title{
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .project-list-div{
+        margin-left: 20px;
+    }
+
+    .project-list-div>ul{
+        font-size: 14px;
+    }
+
+    .project-main-inner{
+        height: 330px;
+    }
+
+    .project-div-1{
+        width: 330px;
+    }
+
+    .contact-title{
+        left: 15px;
+    }
+
+    .contact-info{
+        margin-left: 20px;
+        font-size: 15px;
+        width: 330px;
+    }
+
+    .contact-1>a{
+        font-size: 13px;
+    }
+
+    .contact-2>a{
+        font-size: 13px;
+    }
+
+    .contact-3>a{
+        font-size: 13px;
+    }
+
+    .contact-4>a{
+        font-size: 13px;
+    }
+
+    .contact-2{
+        margin-top: 5px;
+    }
+
+    .contact-3{
+        margin-top: 5px;
+    }
+
+    .contact-4{
+        margin-top: 5px;
+    }
+
+
+}
+
+@media (max-width:430px){
+    .hello-there{ 
+        font-size: 25px;
+    }
+
+    .hello-there>span{ 
+        font-size: 25px;
+    }
+
+    .name{
+        font-size: 35px;
+        width: 300px;
+    }
+
+    .quote-name{
+        font-size: 18px;
+    }
+    
+    .about>p{
+        font-size: 16px;
+    }
+
+    .name-div{
+        width: 300px;
+        height: 370px;
+    }
+
+    .image-div{
+        width: 200px;
+        height: 200px;
+        right: auto;
+    }
+
+    .edu-title-clg{
+        width: 260px;
+    }
+
+    .edu-title-clg>h3{
+        font-size: 17px;
+    }
+
+    .title-icon{
+        height: 19px;
+    }
+
+    .edu-btech{
+        width: 300px;
+        height: 140px;
+    }
+
+    .edu-btech-1{
+        font-size: 16px;
+    }
+
+    .edu-btech-1>svg{
+        width: 14px;
+        position: relative;
+        top: 6px;
+    }
+
+    .edu-btech-1>p{
+        margin-left: 4px;
+    }
+
+    .edu-btech-2>p{
+        margin-left: 4px;
+    }
+
+    .edu-btech-2{
+        font-size: 16px;
+    }
+
+    .edu-btech-2>svg{
+        width: 14px;
+        position: relative;
+        top: 6px;
+    }
+
+    .sch-title-div{
+        width: 350px;
+        height: 30px;
+        margin-top: 50px;
+    }
+
+    .sch-title-div>h3{
+        font-size: 15px;
+    }
+
+    .sch-title-div>svg{
+        position: relative;
+        top: 6px;
+        left: 3px;
+        height: 19px;
+    }
+
+    .edu-sch-1{
+        width: 270px;
+        font-size: 16px;
+    }
+
+    .edu-sch-1>svg{
+        width: 14px;
+        position: relative;
+        top: 6px;
+    }
+
+    .edu-sch-1>p{
+        margin-left: 4px;
+    }
+
+    
+    .skill-list-div{
+        margin-left: 50px;
+    }
+}
+
+.hello-there {
+    animation: 2s lineUp ease-out;
+  }
+  @keyframes lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  .name {
+    animation: 2.5s lineUp ease-out;
+  }
+  @keyframes lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  .quote-name {
+    animation: 2.5s lineUp ease-out;
+  }
+  @keyframes lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  .about{
+    animation: 3s anim-lineUp ease-out;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+
+  .image-div{
+    animation: 3s lineUp ease-out;
+  }
+  @keyframes lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }

@@ -1,0 +1,15 @@
+Hello there;
+
+In this portfolio, I used the following languages
+-> HTML
+-> CSS
+-> JavaScript
+
+The whole portfolio is responsive and mobile friendly. And fully Coded and designed
+by HarsH PanchaL(me).
+
+Using below link you can see my portfolio live.
+
+Thank you!
+Happy Coding</>
+-HarsH PanchaL
